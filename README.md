@@ -1,8 +1,8 @@
 Magma cipher implementation in OFB mode.
 
 Program tests it`s perfomance of crypt + decrypt in two tests:
-  TEST #1 on files of size 1MB, 100MB
-  TEST #2 on file of fixed size with changing cipher key each: 10, 100, 1000 blocks
+  - TEST #1 on files of size 1MB, 100MB
+  - TEST #2 on file of fixed size with changing cipher key each: 10, 100, 1000 blocks
 
 Also all key and subkey info deletes (zeroing) ASAP
 
