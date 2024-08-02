@@ -145,7 +145,7 @@ public class Management {
 
     public static void Shell() {
         int T_sec = 3; // how often to check integrity
-        long Etalon_crc = 1961346842;
+        long Etalon_crc = 1277172538;
         OFB.start_demon_check_integrity_of_program(Etalon_crc, T_sec);
 
         //B_tool.Heap_info();

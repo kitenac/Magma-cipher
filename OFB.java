@@ -50,13 +50,13 @@ public class OFB {
 
 // =========== Some Core functions of OFB mode: work with Register and gamma-handling stuff
 
-// shift register by n: i.e. switch (n) and (m-n) slices
-/*            ______________        ______________
-             |_n__|__m-n____| ---> |__m-n___|_n___|
+// shift register left by n and place gamma:
+/*            _______________        _______________
+             |_n___|__m-n____| ---> |__m-n___|_gama_|
 */
-    public static void Shift_Register(byte[] Register, byte[] n_){
-        System.arraycopy(Register, n-1,  Register, 0, m-n);
-        System.arraycopy(Register, n,    n_,       0, n);
+    public static void Shift_Register(byte[] Register, byte[] gamma){
+        System.arraycopy(gamma,    0,  Register, m-n, n);
+        System.arraycopy(Register, n,  Register, 0, m-n);
     }
 
 
