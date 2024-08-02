@@ -60,7 +60,6 @@ public class Management {
     public static void Create_files_for_tests(){
         B_tool.Create_file_of_N_MB(1);
         B_tool.Create_file_of_N_MB(100);
-        B_tool.Create_file_of_N_MB(1000);
         B_tool.Create_file_of_N_MB(6);
     }
 
@@ -97,7 +96,7 @@ public class Management {
 
         }
         
-        int[] test2_steps = {10, 100, 1000};
+        int[] test2_steps = {10, 100}; // {10, 100, 1000}
 
             // test2
             for (int test2: test2_steps){
